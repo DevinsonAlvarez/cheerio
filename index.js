@@ -6,7 +6,7 @@ let iso;
 
 isoCodes().then((res) => iso = res);
 
-app.get('/iso', (req, res) => res.json(iso));
+app.get('/', (req, res) => res.json(iso));
 
 app.listen(2200);
 console.log('Server on port', 2200);
